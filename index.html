@@ -1,12 +1,23 @@
 <!DOCTYPE html>
+<!--Originaly by: Gabriel Dubé - https://codepen.io/gdube/pen/JybxxZ-->
 <html>
 <head>
 <title>Pong</title>
 <link rel="icon" href="pong-icon.jpg">
 </head>
+    
 <body>
 <canvas></canvas>
-<script>
+<style>
+    body {
+     background-color:#212121  
+    }
+    
+    canvas {
+     border: 3.5px solid white;
+    }
+    </style>
+    <script>
 	// Global Variables
 var DIRECTION = {
 	IDLE: 0,
@@ -68,7 +79,7 @@ var Game = {
 		this.running = this.over = false;
 		this.turn = this.paddle;
 		this.timer = this.round = 0;
-		this.color = '#2c3e50';
+		this.color = '#212121';
 
 		Pong.menu();
 		Pong.listen();
